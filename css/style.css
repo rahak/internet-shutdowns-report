@@ -1,0 +1,279 @@
+@media print {
+
+    @page {
+        size: A5;
+        margin-top: 15mm;
+        margin-bottom: 15mm;
+        margin-left: 15mm;
+        margin-right: 15mm;
+        bleed: 0mm; 
+        marks: crop;
+        }
+    }  
+
+    img { max-width: 100% }
+
+    .chapter { 
+        page:chapter;
+        page-break-before:always;
+        page-break-after: always;
+    }
+
+    .chapter::after {
+        content: "***************";
+        font-weight: 700;
+        padding-left: 33%;
+        text-align: center;
+        margin-top:10pt !important;
+        
+        
+      }
+
+    @page chapter:right{
+        @right-middle{
+            content: counter(page);
+            
+         }
+         
+    }
+    @page chapter:left{
+        @left-middle{
+            content: counter(page);
+
+        }
+        
+    }
+
+    @page chapter:first{
+      @top-right{
+        content: none !important;
+        background-color: #7d2622 !important;
+      }
+      @top-right{
+        content:none !important;
+        background-color: unset !important;
+      }
+    }
+    
+    @page blank{
+        @right-middle{
+            content:none;
+        }
+        @left-middle{
+            content:none;
+        }
+    }
+
+    .front-matter {
+        page: frontmatterLayout;
+    }
+
+    @page: frontmatter {
+        @left-middle{
+            content:none;
+        }
+        @right-middle{
+            content: none;
+        }
+    }
+
+    p {
+        font-family: serif;
+        text-align: justify;
+        text-align-last: left;
+        word-spacing: -1px;
+    }
+
+    
+  h1 { 
+    string-set: doctitle content(Let The Net Work); 
+  }
+
+  @page :left {
+    @top-left {
+      content: string(doctitle);
+      margin: 30pt 0 10pt 0;
+      font-size: 9pt;
+      color: rgb(0, 0, 0);
+      height: auto;
+      padding: 5px;
+      
+    }
+  }
+  
+  h2 { 
+    string-set: chapter content(); 
+  }
+
+  @page :right {
+    @top-right {
+      content: string(chapter);
+      margin: 30pt 0 10pt 0;
+      font-size: 9pt;
+      background-color: rgb(125 38 34);
+      color: white;
+      height: auto;
+      padding: 5px;
+      text-align: center;
+    }
+   
+  }
+
+  .pagedjs_page.pagedjs_left_page .pagedjs_margin-top-left{
+    margin-right: 280px !important;
+    height: 100%;
+    margin-top: 0 !important;
+  }
+
+  .pagedjs_page.pagedjs_right_page .pagedjs_margin-top-right {
+    margin-left: 280px !important;
+    height: 100%;
+    margin-top: 0 !important;
+  }
+
+.inner-title-h1  {
+        background-color: #ffff !important;
+    }
+
+h1{
+    background-color: white !important;
+}
+a{
+    text-decoration: underline;
+    color: darkslategrey;
+    font-size: 9pt;
+}
+    table {
+        
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+   
+    th{
+      width:33% !important;
+      border: 2px solid white;
+      background-color: #b58035;
+    }
+    tr:nth-child(even) {
+      background-color: #f8d7b2;
+    }
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    .center{
+      text-align: center !important;
+    }
+  
+    img {
+        width: 100% !important;
+        height: auto !important;
+        float-reference: page;
+        float: top; 
+        padding: 0;
+        margin-top: 20px;
+      
+    }
+    figure{
+        padding: 2px;
+        margin: 0;
+    }
+    figcaption{
+        font-size: 10pt;
+        color: rgb(81, 27, 27);
+        padding-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+
+
+    .footnote {
+        position: footnotes;
+      }
+    
+    .pagedjs_footnote_content{
+        border-top: 1px solid;
+      }
+    .pagedjs_footnote_area{
+      
+    }
+      @page {
+        @footnote {
+          float: bottom; 
+        }
+      }
+      
+      ::footnote-call { 
+      /*   content: counter(footnote, lower-alpha); */
+        
+      }
+      
+      ::footnote-marker {
+      /*   content: counter(footnote, lower-alpha) ". "; */
+        font-size: 9pt;
+        }
+      
+      
+      span.footnote {
+        color: black;  
+        float: footnote; 
+        font-weight: normal;
+        font-size: 9pt;
+        page-break-inside: avoid;
+        
+      }
+
+      .TOC{
+        page:toc;
+        page-break-after: always;
+        page-break-before: always;
+        
+      }
+
+      .inner-title{
+        page-break-after: always;
+        page-break-before: always;
+      }
+      .inner-title-h1{
+        font-size: 85pt;
+        font-weight: 900 !important;
+        line-height: 1;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .logo {
+        width: 200px !important;
+        height: auto !important;
+        margin-left: 114pt;
+        
+    }
+
+    .cover{
+        width: 100% !important;
+        height: 100% !important;
+        
+        page-break-after: always;
+        page:cover;
+    }
+
+    @page cover{
+        margin: 0 !important;
+        
+    }
+    
+    blockquote {
+      background: #f5f4f4;
+      border-left: 5px solid rgb(20, 20, 20);
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+
+    .ch{
+      font-size: 14pt;
+      font-weight: light;
+    }
+
+    #nav {
+      font-size: 12pt !important;
+    }

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="generator" content="pandoc"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+        <title>IST-final</title>
+        <style>
+            html {
+                line-height: 1.5;
+                font-family: Georgia, serif;
+                font-size: 20px;
+                color: #1a1a1a;
+                background-color: #fdfdfd;
+            }
+            body {
+                margin: 0 auto;
+                max-width: 36em;
+                padding: 50px;
+                hyphens: auto;
+                overflow-wrap: break-word;
+                text-rendering: optimizeLegibility;
+                font-kerning: normal;
+            }
+            @media(max-width: 600px) {
+                body {
+                    font-size: 0.9em;
+                    padding: 1em;
+                }
+                h1 {
+                    font-size: 1.8em;
+                }
+            }
+            @media print {
+                body {
+                    background-color: transparent;
+                    color: black;
+                    font-size: 12pt;
+                }
+                p,
+                h2,
+                h3 {
+                    orphans: 3;
+                    widows: 3;
+                }
+                h2,
+                h3,
+                h4 {
+                    page-break-after: avoid;
+                }
+            }
+            p {
+                margin: 1em 0;
+            }
+            a {
+                color: #1a1a1a;
+            }
+            a:visited {
+                color: #1a1a1a;
+            }
+            img {
+                max-width: 100%;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin-top: 1.4em;
+            }
+            h5,
+            h6 {
+                font-size: 1em;
+                font-style: italic;
+            }
+            h6 {
+                font-weight: normal;
+            }
+            ol,
+            ul {
+                padding-left: 1.7em;
+                margin-top: 1em;
+            }
+            li > ol,
+            li > ul {
+                margin-top: 0;
+            }
+            blockquote {
+                margin: 1em 0 1em 1.7em;
+                padding-left: 1em;
+                border-left: 2px solid #e6e6e6;
+                color: #606060;
+            }
+            code {
+                font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+                font-size: 85%;
+                margin: 0;
+            }
+            pre {
+                margin: 1em 0;
+                overflow: auto;
+            }
+            pre code {
+                padding: 0;
+                overflow: visible;
+                overflow-wrap: normal;
+            }
+            .sourceCode {
+                background-color: transparent;
+                overflow: visible;
+            }
+            hr {
+                background-color: #1a1a1a;
+                border: none;
+                height: 1px;
+                margin: 1em 0;
+            }
+            table {
+                margin: 1em 0;
+                border-collapse: collapse;
+                width: 100%;
+                overflow-x: auto;
+                display: block;
+                font-variant-numeric: lining-nums tabular-nums;
+            }
+            table caption {
+                margin-bottom: 0.75em;
+            }
+            tbody {
+                margin-top: 0.5em;
+                border-top: 1px solid #1a1a1a;
+                border-bottom: 1px solid #1a1a1a;
+            }
+            th {
+                border-top: 1px solid #1a1a1a;
+                padding: 0.25em 0.5em;
+            }
+            td {
+                padding: 0.125em 0.5em 0.25em;
+            }
+            header {
+                margin-bottom: 4em;
+                text-align: center;
+            }
+            #TOC li {
+                list-style: none;
+            }
+            #TOC ul {
+                padding-left: 1.3em;
+            }
+            #TOC > ul {
+                padding-left: 0;
+            }
+            #TOC a:not(:hover) {
+                text-decoration: none;
+            }
+            code {
+                white-space: pre-wrap;
+            }
+            span.smallcaps {
+                font-variant: small-caps;
+            }
+            div.columns {
+                display: flex;
+                gap: min(4vw, 1.5em);
+            }
+            div.column {
+                flex: auto;
+                overflow-x: auto;
+            }
+            div.hanging-indent {
+                margin-left: 1.5em;
+                text-indent: -1.5em;
+            }
+            ul.task-list {
+                list-style: none;
+            }
+            ul.task-list li input[type="checkbox"] {
+                width: 0.8em;
+                margin: 0 0.8em 0.2em -1.6em;
+                vertical-align: middle;
+            }
+            .display.math {
+                display: block;
+                text-align: center;
+                margin: 0.5rem auto;
+            }
+        </style>
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+          <![endif]-->
+    </head>
+    <body>
+        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+            <hr/>
+            <ol>
+                <li id="fn1">
+                    <p>Packingham v North Carolina, 582 U.S.___(2017)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn2">
+                    <p>The Right to Information, 2005, s. 6<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn3">
+                    <p>2019 SCC OnLine Ker 2976<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn4">
+                    <p>AIR 2020 SC 1308<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn5">
+                    <p>https://www.top10vpn.com/research/cost-of-internet-shutdowns/<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn6">
+                    <p>Mukeet Akmali,
+                        <em>KCCI puts estimated losses to Kashmir
+                              Economy at Rs. 40,000 cr.,</em>
+                        Greater Kashmir, 17 July 2022. Accessed
+                          at:
+                          https://www.greaterkashmir.com/business/kcci-puts-estimated-losses-kashmir-economy-at-rs-40000-cr<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn7">
+                    <p>Ibid.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn8">
+                    <p>Aid, Bashir Wani,
+                        <em>18,000 crore rupees, nearly 5 lakh
+                              jobs lost as Kashmir reels under internet suspension</em>, Citizen
+                              Matters, 3 January 2020. Accessed at:
+                              https://citizenmatters.in/kashmir-business-impact-internet-suspended-post-article-370-15069<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn9">
+                    <p>Ibid.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn10">
+                    <p>Ibid.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn11">
+                    <p>
+                        <em>Living in Digital Darkness: A Handbook on Internet
+                              Shutdowns in India</em>, SFLC.in, May 2018, page 66. Accessed at:
+                        <a href="https://sflc.in/sites/default/files/reports/Living in Digital Darkness - A Handbook on Internet Shutdowns in India%2C May 2018 - by SFLCin.pdf">https://sflc.in/sites/default/files/reports/Living%20in%20Digital%20Darkness%20-%20A%20Handbook%20on%20Internet%20Shutdowns%20in%20India%2C%20May%202018%20-%20by%20SFLCin.pdf</a>
+                        <a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn12">
+                    <p>
+                        <em>Ibid</em>
+                        <a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn13">
+                    <p>Rajat Kathuria, Mansi Kedia, Gangesh Varma, Kaushambi
+                          Bhagchi, Richa Sekhani, The Anatomy of an Internet Blackout: Measuring
+                          the Economic Impact of Internet Shutdowns in India, Indian Council for
+                          Research on International Economic Relations, April 2018, page 38.
+                          Accessed at:
+                        <a href="https://icrier.org/pdf/Anatomy_of_an_Internet_Blackout.pdf">https://icrier.org/pdf/Anatomy_of_an_Internet_Blackout.pdf</a>
+                        <a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn14">
+                    <p>Supra Note 13 at page 68<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn15">
+                    <p>Ibid<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn16">
+                    <p>Athar Parvaiz, Kashmir internet blackouts hinder health
+                          services, contact tracing, Reuters, 20 May 2020.Accessed at:
+                        <a href="https://www.reuters.com/article/us-health-coronavirus-india-tech-trfn-idUSKBN22W052">https://www.reuters.com/article/us-health-coronavirus-india-tech-trfn-idUSKBN22W052</a>
+                        <a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn17">
+                    <p>Press release number 43/2022, Telecom Regulatory
+                          Authority of India, 19 July 2022, access at:
+                          https://www.trai.gov.in/sites/default/files/PR_No.43of2022_0.pdf<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn18">
+                    <p>Internet Shutdowns Tracker, SFLC.IN, access at:
+                        <a href="https://internetshutdowns.in/">https://internetshutdowns.in/</a>
+                        <a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn19">
+                    <p>40% syllabus relaxation in class 10-12 exams, Greater
+                          Kashmir, 31 October 2020. Accessed on:
+                        <a href="https://www.greaterkashmir.com/news/front-page-2/40-syllabus-relaxation-in-class-10-12-exams/">https://www.greaterkashmir.com/news/front-page-2/40-syllabus-relaxation-in-class-10-12-exams/</a>
+                        <a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn20">
+                    <p>Rifat Fareed, Kashmir lockdowns, slow internet rob
+                          students of their education, DW, 17 March 2021. Accessed on:
+                        <a href="https://www.dw.com/en/kashmir-lockdowns-hurt-students/a-56904725">https://www.dw.com/en/kashmir-lockdowns-hurt-students/a-56904725</a>
+                        <a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn21">
+                    <p>
+                        <em>Supra</em>
+                        Note 36 and Lost Voices. Also see: Fateh
+                          Veer Singh and Rishab Jain, J&amp; K: Students’ NEET preparation suffers
+                          amidst Sluggish Internet Services, The Wire, 11 February 2020. Accessed
+                          at:
+                        <a href="https://thewire.in/rights/kashmir-students-neet-internet">https://thewire.in/rights/kashmir-students-neet-internet</a>
+                        <a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn22">
+                    <p>Peerzada Ashiq, We’re in the stone age, say Kashmir
+                          students on Internet shut down, The Hindu, 25 January 2020. Accessed at:
+                        <a href="https://www.thehindu.com/news/national/were-in-the-stone-age-say-kashmir-students-on-internet-shut-down/article30653509.ece">https://www.thehindu.com/news/national/were-in-the-stone-age-say-kashmir-students-on-internet-shut-down/article30653509.ece</a>
+                        <a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn23">
+                    <p>(D. No. 10817 of 2020)<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn24">
+                    <p>Ibid, para 5<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn25">
+                    <p>Ibid, paras 12-15<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn26">
+                    <p>Letter to Vice Chancellor Kurukshetra University to
+                          protest against physical examinations due to Internet Suspension,
+                          SFLC.in, 9 September 2021. Accessed at:
+                          https://sflc.in/letter-kurukshetra-university-against-students-being-forced-write-physical-exams-due-internet<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn27">
+                    <p>Constitution of India, 1951, Article 246 read with
+                          7<sup>th</sup>
+                        Schedule.<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn28">
+                    <p>Kris Ruijgrok (2021):
+                        <em>The authoritarian practice of
+                              issuing internet shutdowns in India: the Bharatiya Janata Party’s direct
+                              and indirect responsibility, Democratization</em>, DOI:
+                              10.1080/13510347.2021.1993826. Accessed at:
+                        <a href="https://www.tandfonline.com/doi/full/10.1080/13510347.2021.1993826">https://www.tandfonline.com/doi/full/10.1080/13510347.2021.1993826</a>
+                        <a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn29">
+                    <p>Criminal Procedure Code 1973, Section 144.<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn30">
+                    <p>Temporary Suspension of Telecom Services (Public
+                          Emergency or Public Safety) Rules, 2017; Indian Telegraph Act, 1885,
+                          Section 7(2)(5). It gives rules making power to the central government
+                          with respect to conditions and restrictions subject to which any
+                          telegraph line, appliance of apparatus for telegraphic communication
+                          shall be established, maintained, worked, repaired, transferred,
+                          shifted, withdrawn or disconnected.<a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn31">
+                    <p>
+                        <em>Gaurav Sureshbhai Vyas v State of Gujarat</em>
+                        2016
+                          SCC OnLine SC 1866<a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn32">
+                    <p>
+                        <em>Gaurav Sureshbhai Vyas v State of Gujarat</em>
+                        2015
+                          SCC OnLine Guj 6491<a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn33">
+                    <p>
+                        <em>Anuradha Bhasin v Union of India,</em>
+                        para 108<a href="#fnref33" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn34">
+                    <p>
+                        <em>Anuradha Bhasin v Union of India,</em>
+                        para 110<a href="#fnref34" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn35">
+                    <p>
+                        <em>Anuradha Bhasin v Union of India,</em>
+                        para 133<a href="#fnref35" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn36">
+                    <p>
+                        <em>Sharat Babu Digumarti v Government of NCT
+                              Delhi</em>, (2017) 2 SCC 18<a href="#fnref36" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn37">
+                    <p>
+                        <em>People’s Union For Civil Liberties v. Union of
+                              India</em>
+                        (1997) 1 SCC 301, para 27-28;
+                        <em>Dr. Ram Manohar Lohia v.
+                              State of Bihar and Ors</em>
+                        (1966) 1 SCR 709, para 55.<a href="#fnref37" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn38">
+                    <p>Maratha Quota Stir: Internet Services Suspended in Pune
+                          District, The Wire, 9 August 2018. Accessed at:
+                        <a href="https://thewire.in/caste/maratha-quota-stir-internet-services-suspended-in-pune-district">https://thewire.in/caste/maratha-quota-stir-internet-services-suspended-in-pune-district</a>;
+                              Internet was also shut down in Mumbai in July. See: Maratha Quota stir:
+                              Internet services suspended in Navi Mumbai, 26 Jule 2018. Accessed at:
+                        <a href="https://timesofindia.indiatimes.com/city/mumbai/maratha-quota-stir-internet-services-suspended-in-navi-mumbai/articleshow/65144524.cms">https://timesofindia.indiatimes.com/city/mumbai/maratha-quota-stir-internet-services-suspended-in-navi-mumbai/articleshow/65144524.cms</a>
+                        <a href="#fnref38" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn39">
+                    <p>Gujjar stir in Rajasthan enters 5<sup>th</sup>
+                        day,
+                          trains affected, Internet snapped, News Nation, 12 February 2019.
+                          Accessed at:
+                        <a href="https://www.newsnation.in/india-news/gujjar-community-stir-agitation-rajasthan-sawai-madhopur-trains-affected-internet-suspended-gurjar-kirori-singh-bainsla-chief-minister-ashok-gehlot-article-213872.html">https://www.newsnation.in/india-news/gujjar-community-stir-agitation-rajasthan-sawai-madhopur-trains-affected-internet-suspended-gurjar-kirori-singh-bainsla-chief-minister-ashok-gehlot-article-213872.html</a>
+                        <a href="#fnref39" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn40">
+                    <p>
+                        <em>Anuradha Bhasin v Union of India,</em>
+                        para 99<a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn41">
+                    <p>
+                        <em>Dhirendra Singh Rajpourohit v Government of
+                              Rajasthan</em>
+                        (D.B. Civil Writ No. 10304/2018)<a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn42">
+                    <p>
+                        <a href="https://www.ndtv.com/india-news/assam-recuitment-exam-4-hour-internet-shutdown-in-assam-reason-to-prevent-cheating-in-an-exam-3272595">https://www.ndtv.com/india-news/assam-recuitment-exam-4-hour-internet-shutdown-in-assam-reason-to-prevent-cheating-in-an-exam-3272595</a>;
+                        <a href="https://indianexpress.com/article/cities/kolkata/amid-tight-security-internet-shutdown-tet-after-5-years-8318086/">https://indianexpress.com/article/cities/kolkata/amid-tight-security-internet-shutdown-tet-after-5-years-8318086/</a>;
+                              https://www.medianama.com/2022/03/223-west-bengal-internet-shutdown-order-problematic/<a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn43">
+                    <p>Suspension of Telecom Services/ Internet and Its
+                          Impact, 26<sup>th</sup>
+                        Report, Sanding Committee on Communications and
+                          Information Technology, December 2021. Also see: IT Standing Committee’
+                          s Report on Internet Shutdowns, SFLC, 8 December 2021 at page 14.
+                          Accessed at:
+                        <a href="https://sflc.in/it-standing-committees-report-internet-shutdowns">https://sflc.in/it-standing-committees-report-internet-shutdowns</a>
+                        <a href="#fnref43" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn44">
+                    <p>IT Standing Committee’ s Report on Internet Shutdowns,
+                          SFLC, 8 December 2021 at page 14. Accessed at:
+                        <a href="https://sflc.in/it-standing-committees-report-internet-shutdowns">https://sflc.in/it-standing-committees-report-internet-shutdowns</a>
+                        <a href="#fnref44" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn45">
+                    <p>
+                        <em>Anuradha Bhasin v Union of India,</em>
+                        para 96.<a href="#fnref45" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn46">
+                    <p>SFLC.in wrote to Rajasthan government against imposing
+                          arbitrary internet shutdowns, SFLC.in, 25 October 2021. Accessed at:
+                        <a href="https://sflc.in/sflcin-wrote-rajasthan-government-against-imposing-arbitary-internet-shutdowns">https://sflc.in/sflcin-wrote-rajasthan-government-against-imposing-arbitary-internet-shutdowns</a>;
+                              Letter sent to Rajasthan Government against imposing a internet shutdown
+                              to prevent cheating in exams, SFLC, 26 September 2021. Accessed at:
+                        <a href="https://sflc.in/sflcin-wrote-rajasthan-government-against-imposing-internet-shutdowns-prevent-cheating-exams">https://sflc.in/sflcin-wrote-rajasthan-government-against-imposing-internet-shutdowns-prevent-cheating-exams</a>;
+                              Our letter to J&amp;K administration against imposing internet shutdowns
+                              during the second wave of COVID 19 Pandemic, SFLC.in, 10 March 2021.
+                              Accessed at:
+                        <a href="https://sflc.in/our-letter-jammu-and-kashmir-adminstration-against-imposing-shutdowns-during-deadly-second-wave">https://sflc.in/our-letter-jammu-and-kashmir-adminstration-against-imposing-shutdowns-during-deadly-second-wave</a>;
+                              Representation sent to govt of Arunachal Pradesh regarding suspension of
+                              Internet Services, SFLC.in, 2 November 2020. Accessed at:
+                        <a href="https://sflc.in/representation-sent-arunchal-pradesh-government-suspension-internet-services-15-districts-curb">https://sflc.in/representation-sent-arunchal-pradesh-government-suspension-internet-services-15-districts-curb</a>;
+                              Collective statement to urge the Government of Jammu and Kashmir to
+                              restore High- Speed Internet, SFLC, 13 August 2020. Accessed at:
+                        <a href="https://sflc.in/collective-statement-urge-government-jammu-and-kashmir-restore-highspeed-internet">https://sflc.in/collective-statement-urge-government-jammu-and-kashmir-restore-highspeed-internet</a>
+                        <a href="#fnref46" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn47">
+                    <p>SFLC.in assists in challenging the Haryana Shutdown
+                          order, SFLC.in, 12 February 2021. Accessed at:
+                        <a href="https://sflc.in/sflcin-assists-challenging-haryana-shutdown-order">https://sflc.in/sflcin-assists-challenging-haryana-shutdown-order</a>;
+                              Division Bench of Calcutta High Court to have a special sitting tomorrow
+                              to look into the Hoogli internet shutdown, SFLC.in, 15 May 2020.
+                              Accessed at:
+                        <a href="https://sflc.in/sflcin-moves-calcutta-high-court-challenging-internet-shutdown-hoogli-district">https://sflc.in/sflcin-moves-calcutta-high-court-challenging-internet-shutdown-hoogli-district</a>
+                        <a href="#fnref47" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn48">
+                    <p>The Draft Telecommunication Bill, 2022.<a href="#fnref48" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn49">
+                    <p>
+                        <em>Internet shutdowns: trends, causes, legal
+                              implications and impacts on a range of human rights,</em>
+                        Office of the
+                          United Nations High Commissioner for Human Rights, May 13, 2022. Access
+                          at:
+                          https://documents-dds-ny.un.org/doc/UNDOC/GEN/G22/341/55/PDF/G2234155.pdf?OpenElement<a href="#fnref49" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn50">
+                    <p>Litigation Tracker, SFLC.IN. Access at:
+                          https://sflc.in/litigation-tracker.<a href="#fnref50" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn51">
+                    <p>Calcutta HC Stays Internet Shutdown order issued by
+                          West Bengal Government, Internet Freedom Foundation. Access at:
+                          https://internetfreedom.in/calcutta-hc-stays-internet-shutdown-issued-by-west-bengal-government/;
+                          https://www.medianama.com/2022/07/223-calcutta-hc-internet-shutdown-iff-petition-follow-law-remarks/<a href="#fnref51" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn52">
+                    <p>Rajasthan HC issued notice in a petition by Industry
+                          Bodies against repeated internet suspension in Rajasthan, Internet
+                          Freedom Foundation. Access at:
+                          https://internetfreedom.in/rajasthan-hc-issued-notice-in-a-petition-by-industry-bodies-against-repeated-internet-suspensions-in-rajasthan/<a href="#fnref52" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn53">
+                    <p>Litigation Tracker, SFLC.IN. Access at:
+                          https://sflc.in/litigation-tracker<a href="#fnref53" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn54">
+                    <p>Litigation Tracker, SFLC.IN. Access at:
+                          https://sflc.in/litigation-tracker<a href="#fnref54" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn55">
+                    <p>Foundation of Media Professionals V. Union Territory of
+                          Jammu and Kashmir, 2020, 2020 SCC online SC 453<a href="#fnref55" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn56">
+                    <p>Internet Shutdowns and Human Rights, United Nations
+                          Office of the High Commissioner for Human Rights,
+                          https://www.ohchr.org/sites/default/files/Documents/Press/Internet-shutdowns-and-human-rights.pdf
+                          (last visited on 17 Nov, 2022)<a href="#fnref56" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn57">
+                    <p>Guiding Principles on Business and Human Rights, United
+                          Nations Office of High Commissioner for Human Rights,
+                          https://www.ohchr.org/sites/default/files/documents/publications/guidingprinciplesbusinesshr_en.pdf
+                          (last visited on 18 Nov 2022)<a href="#fnref57" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn58">
+                    <p>Adil Amin Akhoon, Saliq Parvaiz, How do journalists
+                          work under information blockades, Al Jazeera (2022),
+                          https://institute.aljazeera.net/en/ajr/article/1933, (last visited on 18
+                          Nov 2022)<a href="#fnref58" class="footnote-back" role="doc-backlink">↩︎</a>
+                    </p>
+                </li>
+                <li id="fn59"></li>
+            </ol>
+        </section>
+    </body>
+</html>
